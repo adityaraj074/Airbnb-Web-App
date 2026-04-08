@@ -3,11 +3,11 @@ import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
-import RedirectIfAuth from "../components/RedirectIfAuth";
+import RedirectIfAuth from "./RedirectIfAuth";
 import AddList from "../pages/AddList";
 import ListingDetails from "../pages/ListingDetails";
 import EditListing from "../pages/EditListing";
-import ProtectedRoute from "../components/ProtectedRoute";
+import ProtectedRoute from "./ProtectedRoute";
 
 const AppRoutes = ({ isLoggedIn, setIsLoggedIn, searchText }) => {
   return (

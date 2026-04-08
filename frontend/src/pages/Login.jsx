@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { loginUser } from "../services/api";
 import "../index.css";
+import { styles } from "../styles/LoginStyles";
 
 const Login = ({ setIsLoggedIn }) => {
   const navigate = useNavigate();
@@ -138,90 +139,6 @@ const Login = ({ setIsLoggedIn }) => {
       </div>
     </div>
   );
-};
-
-const styles = {
-  container: {
-    minHeight: "100vh",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    padding: "15px",
-    backgroundColor: "#f7f7f7",
-    boxSizing: "border-box",
-    overflowY: "auto",
-  },
-  card: {
-    width: "100%",
-    maxWidth: "400px",
-    padding: "20px 25px",
-    borderRadius: "12px",
-    background: "#fff",
-    boxShadow: "0 6px 20px rgba(0,0,0,0.1)",
-    boxSizing: "border-box",
-  },
-  title: {
-    textAlign: "center",
-    marginBottom: "25px",
-  },
-  field: {
-    marginBottom: "12px",
-  },
-  input: {
-    width: "100%",
-    padding: "12px 15px",
-    borderRadius: "6px",
-    border: "1px solid #ccc",
-    fontSize: "1rem",
-    boxSizing: "border-box",
-  },
-  btn: {
-    width: "100%",
-    padding: "12px",
-    background: "#ff385c",
-    color: "#fff",
-    border: "none",
-    borderRadius: "6px",
-    fontSize: "1rem",
-    fontWeight: "bold",
-    marginTop: 25,
-    transition: "all 0.2s ease",
-  },
-  bottom: {
-    marginTop: "18px",
-    textAlign: "center",
-    fontSize: "0.9rem",
-  },
-  link: {
-    color: "#ff385c",
-    textDecoration: "none",
-    fontWeight: "bold",
-  },
-  error: {
-    color: "red",
-    fontSize: "0.8rem",
-    minHeight: "18px",
-    margin: "4px 0 0 0",
-  },
-  errorBox: {
-    background: "#fdecea",
-    color: "#d93025",
-    padding: "10px",
-    borderRadius: "6px",
-    fontSize: "0.9rem",
-    marginBottom: "15px",
-    textAlign: "center",
-    border: "1px solid #f5c6cb",
-  },
-  eye: {
-    position: "absolute",
-    right: "12px",
-    top: "50%",
-    transform: "translateY(-50%)",
-    cursor: "pointer",
-    fontSize: "0.85rem",
-    color: "#555",
-  },
 };
 
 export default Login;

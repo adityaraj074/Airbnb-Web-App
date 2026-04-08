@@ -1,6 +1,9 @@
 # dependencies
 node_modules
 
+seed.js
+backend/seed.js
+
 # env files
 .env
 backend/.env
